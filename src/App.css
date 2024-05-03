@@ -1,0 +1,196 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.background-image {
+    background-image: url('./images/battle.jpg');
+    background-color: rgb(73, 69, 69);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.boxPokemon1 {
+    /* border: 1px solid red; */
+    top: 65%;
+    left: 40%;
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.selectBox {
+    /* border: 1px solid red; */
+    top: 65%;
+    left: 15%;
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+}
+
+
+/* border: 1px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(128, 128, 128, 0.5);
+    opacity: 0.75;
+    top: 60%;
+    left: 50%;
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+    background-color: #747474;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden; */
+
+.pokemonCard {
+    /* border: 1px solid #ff0000; */
+    /* เพิ่มสีกรอบ */
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* ระยะห่างภายใน */
+    background-color: rgba(128, 128, 128, 0.5);
+    /* พื้นหลังสีเทาโปร่งใส */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* จัดให้ข้อความเริ่มจากซ้าย */
+    width: 270px;
+    /* ความกว้างของการ์ด */
+}
+
+.pokemonStat {
+    margin-bottom: 5px;
+    /* ระยะห่างระหว่างข้อมูล */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    color: #fff;
+    /* สีตัวอักษร */
+    overflow: hidden;
+    /* ซ่อนข้อความที่ไม่พอดี */
+    text-overflow: ellipsis;
+    /* แสดง ... หากข้อความยาวเกินไป */
+    white-space: nowrap;
+    /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+    display: block;
+}
+
+.pokemonStat span {
+    display: inline-block;
+    min-width: 50px;
+    /* ขนาดขั้นต่ำของข้อมูล */
+    text-align: right;
+    /* จัดให้ข้อความขวา */
+    margin-left: 10px;
+    /* ระยะห่างระหว่างชื่อข้อมูลกับค่า */
+}
+
+.bad-pokemon {
+    /* border: 1px solid red; */
+    top: 15%;
+    left: 50%;
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+}
+
+.bad-pokemonCard {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* ระยะห่างภายใน */
+    background-color: rgba(128, 128, 128, 0.5);
+    /* พื้นหลังสีเทาโปร่งใส */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* จัดให้ข้อความเริ่มจากซ้าย */
+    width: 270px;
+    height: 130px;
+    /* ความกว้างของการ์ด */
+}
+
+.BadpokemonStat {
+    margin-bottom: 5px;
+    /* ระยะห่างระหว่างข้อมูล */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    color: #fff;
+    /* สีตัวอักษร */
+    overflow: hidden;
+    /* ซ่อนข้อความที่ไม่พอดี */
+    text-overflow: ellipsis;
+    /* แสดง ... หากข้อความยาวเกินไป */
+    white-space: nowrap;
+    /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+    display: block;
+}
+
+.BadpokemonStat span {
+    display: inline-block;
+    min-width: 50px;
+    /* ขนาดขั้นต่ำของข้อมูล */
+    text-align: right;
+    /* จัดให้ข้อความขวา */
+    margin-left: 10px;
+    /* ระยะห่างระหว่างชื่อข้อมูลกับค่า */
+}
